@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+#search {
+    width: 600px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#btn{
+    background-color: #1870cd;
+    width: 100px;
+    border-radius: 16px;
+    color: #ddd;
+    font-size: larger;
+    padding: 10 15 10 15px;
+  
+}
+
+    
+
+button {
+    padding: 10px;
+}
+.news-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.news-item h2 {
+    margin: 0;
+}
+.news-item p {
+    margin: 5px 0;
+}
+.news-item a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.news-item a:hover {
+    text-decoration: underline;
+}
+.news-item img {
+    width: 100%; /* Make the image responsive */
+    max-width: 300px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    margin-bottom: 10px; /* Space between the image and the text below */
+    display: flex;
+}
+
+@media only screen and (max-width: 480px) {
+    #search {
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
+    }
+    #btn{
+        background-color: #1870cd;
+        width: 80px;
+        border-radius: 16px;
+        color: #ddd;
+        font-size: small;
+        padding: 5 10 5 10px;
+    }
+    .content{
+        display: flex;
+        gap: 10px;
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+   }
+   body{
+    width: 80%;
+   }
+       
+    }
+   
+  
