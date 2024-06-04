@@ -59,10 +59,12 @@ li{
     margin-left: 64%;
     height: 50px;
     width: 160px;
+    cursor: pointer;
 }
 #img{
   width: 500px;
   height: 900px;
+  
 }
 .explore{
     display: flex;

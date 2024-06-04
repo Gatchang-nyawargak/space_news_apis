@@ -49,6 +49,8 @@ function displayNews(articles) {
         newsItem.appendChild(link);
         
         newsContainer.appendChild(newsItem);
+        
     });
 }
 fetchNews();
+
