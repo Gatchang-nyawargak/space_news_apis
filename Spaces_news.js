@@ -42,7 +42,7 @@ function displayNews(articles) {
         const link = document.createElement('a');
         link.href = article.url;
         link.target = '_blank';
-        link.textContent = 'Get article';
+        link.textContent = 'View article';
         
         newsItem.appendChild(title);
         newsItem.appendChild(summary);
