@@ -9,6 +9,7 @@ body {
     background: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: blueviolet;
 }
 
 h1 {
@@ -30,8 +31,6 @@ h1 {
   
 }
 
-    
-
 button {
     padding: 10px;
 }
@@ -44,6 +43,9 @@ button {
 }
 .news-item p {
     margin: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .news-item a {
     color: #007BFF;
@@ -53,11 +55,10 @@ button {
     text-decoration: underline;
 }
 .news-item img {
-    width: 100%; /* Make the image responsive */
-    max-width: 300px; /* Set a maximum width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    margin-bottom: 10px; /* Space between the image and the text below */
+    width: 100%;
+    max-width: 300px; 
+    height: auto; 
+    margin-bottom: 10px; 
     display: flex;
 }
 

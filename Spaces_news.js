@@ -4,9 +4,7 @@ async function fetchNews() {
     
     if (searchQuery) {
         response = await fetch(`https://api.spaceflightnewsapi.net/v3/articles?title_contains=${encodeURIComponent(searchQuery)}`);
-    } else {
-        response = await fetch('https://api.spaceflightnewsapi.net/v3/articles');
-    }
+    } 
     
     const articles = await response.json();
     
