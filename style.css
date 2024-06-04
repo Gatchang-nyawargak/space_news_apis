@@ -6,7 +6,6 @@ body {
 #app {
     max-width: 800px;
     margin: 0 auto;
-    background: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   background-color: #83079991;
@@ -60,6 +59,11 @@ button {
     height: auto; 
     margin-bottom: 10px; 
     display: flex;
+}
+link{
+    text-decoration: none;
+    font-size: larger;
+    color: black;
 }
 
 @media only screen and (max-width: 480px) {

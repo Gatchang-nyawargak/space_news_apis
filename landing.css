@@ -2,7 +2,7 @@ body{
     background-image: url(https://www.ejiltalk.org/wp-content/uploads/2021/03/pexels-photo-110854.jpeg);
     background-repeat: no-repeat;
     background-position-x: center;
-    width: 100%;
+    width: 80%;
     height: 50%;
 }
 .navss{
@@ -63,16 +63,19 @@ li{
     margin-left: 64%;
     height: 50px;
     width: 160px;
+    cursor: pointer;
 }
 #img{
   width: 500px;
   height: 900px;
+  
 }
 .explore{
     display: flex;
     justify-content: space-around;
     gap: 10px;
 }
+
 
 
 
