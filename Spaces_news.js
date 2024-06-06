@@ -4,6 +4,9 @@ async function fetchNews() {
     
     if (searchQuery) {
         response = await fetch(`https://api.spaceflightnewsapi.net/v3/articles?title_contains=${encodeURIComponent(searchQuery)}`);
+    }
+    else{
+        response = await fetch('https://api.spaceflightnewsapi.net/v3/articles');
     } 
     
     const articles = await response.json();
@@ -12,8 +15,9 @@ async function fetchNews() {
         article.title.toLowerCase().includes('nasa') || article.summary.toLowerCase().includes('nasa') ||
         article.title.toLowerCase().includes('blue origin') || article.summary.toLowerCase() .includes('blue origin')
     );
+    const articlesshow=searchQuery? articles:articles.slice(1);
     
-    displayNews(filteredArticles);
+    displayNews(articlesshow);
 }
 
 function displayNews(articles) {
