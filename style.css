@@ -2,13 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
+    background-color: #091625;
 }
 #app {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
   background-color: #83079991;
+
+  background-color: rgb(200, 183, 216);
+
 }
 
 h1 {
@@ -49,6 +54,7 @@ button {
 .news-item a {
     color: #007BFF;
     text-decoration: none;
+    font-size: larger;
 }
 .news-item a:hover {
     text-decoration: underline;
@@ -65,6 +71,28 @@ link{
     font-size: larger;
     color: black;
 }
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
 
 @media only screen and (max-width: 480px) {
     #search {

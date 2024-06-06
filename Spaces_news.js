@@ -7,8 +7,6 @@ async function fetchNews() {
     } 
     
     const articles = await response.json();
-    
-    // Filter articles to include only those with "space" or "nasa" or "Blue origin" in the title or summary
     const filteredArticles = articles.filter(article =>
         article.title.toLowerCase().includes('space') || article.summary.toLowerCase().includes('space') ||
         article.title.toLowerCase().includes('nasa') || article.summary.toLowerCase().includes('nasa') ||
@@ -35,7 +33,6 @@ function displayNews(articles) {
             image.alt = article.title;
             newsItem.appendChild(image);
         }
-        
         const summary = document.createElement('p');
         summary.textContent = article.summary;
         
