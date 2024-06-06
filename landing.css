@@ -9,18 +9,18 @@ body{
     color: rgb(237, 234, 234);
     text-align: center;
     font-size: 60px;
-    padding-top:160px;
+    padding-top:140px;
 }
 #h2{
     color: rgb(215, 49, 121);
     text-align: center;
     font-size: 80px;
     padding-left: 80px;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 #getbutton{
     text-align:center;
-    margin-left: 75%;
+    margin-left: 5%;
     font-size: 20px;
     border-radius: 10px;
     height: 38px;
@@ -55,21 +55,29 @@ li{
 #discoverbutton{
     font-size: 20px;
     border-radius: 10px;
-    margin-top: 70px;
-    margin-left: 64%;
+    margin-bottom: 20%;
     height: 50px;
     width: 160px;
     cursor: pointer;
+ /* margin-right: 6%; */
+}
+#button{
+    padding-left: 13%;
 }
 #img{
-  width: 500px;
-  height: 900px;
-  
+
+  object-fit: cover;
+  width: 400px;
+  height: 750px;
+
 }
 .explore{
     display: flex;
-    justify-content: space-around;
     gap: 10px;
+}
+.navbar{
+    justify-content: end;
+    display: flex;
 }
 
 
