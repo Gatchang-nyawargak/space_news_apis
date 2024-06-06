@@ -2,27 +2,28 @@ body{
     background-image: url(https://www.ejiltalk.org/wp-content/uploads/2021/03/pexels-photo-110854.jpeg);
     background-repeat: no-repeat;
     background-position-x: center;
-    width: 80%;
-    height: 50%;
+    /* width: 80%;
+    height: 50%; */
 }
 .navss{
     display: flex;
     justify-content: space-around;
-    gap: 10%;
+    /* gap: 10%; */
 }
 
 #h1{
     color: rgb(237, 234, 234);
     text-align: center;
-    font-size: 60px;
-    padding-top:160px;
+    font-size: 80px;
+    /* padding-top:160px; */
+    /* padding-bottom: 20px; */
 }
 #h2{
     color: rgb(215, 49, 121);
     text-align: center;
     font-size: 80px;
     padding-left: 80px;
-    padding-top: 60px;
+    padding-top: 0px;
 }
 #getbutton{
     text-align:center;
@@ -80,14 +81,13 @@ li{
 
 
 @media  screen and (max-width:600px) and (min-width:375px) {
-
-    #getbutton{
-    text-align:center;
-    margin-left: 15%;
-    font-size: 15px;
-    border-radius: 10px;
-    height: 38px;
-    width: 120px;
+#getbutton{
+text-align:center;
+margin-left: 15%;
+font-size: 15px;
+border-radius: 10px;
+height: 38px;
+width: 120px;
 }
 body{
     background-repeat: no-repeat;
