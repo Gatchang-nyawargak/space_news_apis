@@ -2,48 +2,33 @@ body{
     background-image: url(https://www.ejiltalk.org/wp-content/uploads/2021/03/pexels-photo-110854.jpeg);
     background-repeat: no-repeat;
     background-position-x: center;
-    /* width: 80%;
-    height: 50%; */
 }
 .navss{
     display: flex;
     justify-content: space-around;
-    /* gap: 10%; */
+    padding-left: 80px;
+  
 }
 
 #h1{
     color: rgb(237, 234, 234);
     text-align: center;
-
-    font-size: 80px;
-    /* padding-top:160px; */
-    /* padding-bottom: 20px; */
-
+    font-size: 200px;
     font-size: 60px;
-    padding-top:140px;
+    padding-top:150px;
 
 }
 #h2{
     color: rgb(215, 49, 121);
     text-align: center;
     font-size: 80px;
-    padding-left: 80px;
+    /* padding-left: 80px; */
 
-    padding-top: 0px;
+    /* padding-top: 20px; */
 
     padding-top: 30px;
 
 }
-#getbutton{
-    text-align:center;
-    margin-left: 5%;
-    font-size: 20px;
-    border-radius: 10px;
-    height: 38px;
-    width: 130px;
-    
-}
-
 nav{flex: 1;
     text-align: start;
     margin-left: 40%;
@@ -68,12 +53,13 @@ li{
 }
 #discoverbutton{
     font-size: 20px;
-    border-radius: 10px;
+    color:#FF00FF ;
+    border-radius: 30px;
     margin-bottom: 20%;
-    height: 50px;
-    width: 160px;
+    margin-left: 30%;
+    padding: 20px 20px;
     cursor: pointer;
- /* margin-right: 6%; */
+ border: none;
 }
 #button{
     padding-left: 13%;
@@ -81,17 +67,20 @@ li{
 #img{
 
   object-fit: cover;
-  width: 400px;
-  height: 750px;
+  width: 500px;
+  height: 800px;
 
 }
 .explore{
     display: flex;
-    gap: 10px;
+    margin-left: 20%;
+    gap: 10%;
+    
 }
 .navbar{
-    justify-content: end;
+    /* justify-content: end; */
     display: flex;
+   padding-left: 1000px;
 }
 
 
@@ -131,7 +120,7 @@ nav{flex: 1;
     gap: 10px;
 }
 #img{
-    width: 170px;
+    width: 200px;
     height: 250px;
   }
 
@@ -319,12 +308,7 @@ nav{flex: 1;
   }
 
   #discoverbutton{
-    font-size: 17px;
-    border-radius: 10px;
-    margin-top: 70px;
-    margin-left: 64%;
-    height: 43px;
-    width: 150px;
+  background-color: blue;
 }
 li{
     display: flex;

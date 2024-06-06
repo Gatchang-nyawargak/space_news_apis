@@ -49,5 +49,13 @@ function displayNews(articles) {
         
     });
 }
+fetch('https://randomuser.me/api/')
+  .then(response => response.json())
+  .then(data => {
+    const users = data.results;
+    const usersJSON = JSON.stringify(users);
+    localStorage.setItem('allUsers', usersJSON);
+  })
+  .catch(error => console.log("error", error));
 fetchNews();
 
