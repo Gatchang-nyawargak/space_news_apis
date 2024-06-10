@@ -157,6 +157,7 @@ nav {
 
     nav li {
         margin: 5px 0; 
+    }
 
     main {
         padding: 10px; 
@@ -178,7 +179,7 @@ nav {
         width: 90%; 
         margin-left: 5%; 
     }
-}
+
 .news-item img {
     width: 100%;
     max-width: 100px; 
