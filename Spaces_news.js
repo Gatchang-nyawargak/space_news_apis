@@ -21,7 +21,7 @@ async function fetchNews() {
 }
 
 function displayNews(articles) {
-    const newsContainer = document.getElementById('news-container');
+    const newsContainer = document.getElementById('news-container') ; 
     newsContainer.innerHTML = '';
     
     articles.forEach(article => {
