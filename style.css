@@ -43,19 +43,9 @@ button {
 }
 
 .news-item {
-     /* border: 3px solid #00008B ; */
-    padding: 10px 0;
- /* display: flex;  */
+padding: 10px 0;
  align-items: start; 
-     /* width: 50%;  */
-   /* height: 100%; 
-   border: solid 1px ;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding: 20px 5px 0; */ 
-   border-radius: 5px; 
+border-radius: 5px; 
 }
 
 .news-item h2 {
@@ -98,7 +88,7 @@ button {
     justify-content: center; /* Center the grid items */
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 200px) and (max-width: 400px) {
     #search {
         width: 200px;
         padding: 10px;
@@ -121,7 +111,42 @@ button {
         margin-bottom: 20px;
     }
     body {
-        width: 80%;
+        width: 90%;
+    }
+    #news-container {
+        display: grid;
+        grid-template-columns: 50%; 
+        gap: 10px;
+        justify-content: center; 
+    }
+  
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px)  {
+
+    #search {
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
+    }
+    #btn {
+        background-color: #1870cd;
+        width: 80px;
+        border-radius: 16px;
+        color: #ddd;
+        font-size: small;
+        padding: 5 10 5 10px;
+    }
+   .content {
+        display: flex;
+        gap: 10px;
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    body {
+        width: 90%;
     }
     #news-container {
         display: grid;
@@ -131,3 +156,143 @@ button {
     }
 
 }
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+#search {
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
+    }
+    #btn {
+        background-color: #1870cd;
+        width: 50%;
+        border-radius: 16px;
+        color: #ddd;
+        font-size: small;
+        padding: 5 10 5 10px;
+    }
+   .content {
+        display: flex;
+        gap: 2px;
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    body {
+        width: 95%;
+    }
+    #news-container {
+        display: grid;
+        grid-template-columns: 50%; 
+        gap: 10px;
+        justify-content: center; 
+    }
+
+}
+
+
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+    #search {
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
+    }
+    #btn {
+        background-color: #1870cd;
+        width: 80px;
+        border-radius: 16px;
+        color: #ddd;
+        font-size: small;
+        padding: 5 10 5 10px;
+    }
+   .content {
+        display: flex;
+        gap: 10px;
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    body {
+        width: 90%;
+    }
+    #news-container {
+        display: grid;
+        grid-template-columns: 50%; 
+        gap: 10px;
+        justify-content: center; 
+    }
+   
+}
+
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+    #search {
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
+    }
+    #btn {
+        background-color: #1870cd;
+        width: 90px;
+        border-radius: 16px;
+        color: #ddd;
+        font-size: small;
+        padding: 5 10 5 10px;
+    }
+   .content {
+        display: flex;
+        gap: 10px;
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    body {
+        width: 80%;
+    }
+    #news-container {
+        display: grid;
+        grid-template-columns: 50%; 
+        gap: 10px;
+        justify-content: center; 
+    }
+  
+}
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1370px) {
+    #search {
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
+    }
+    #btn {
+        background-color: #1870cd;
+        width: 80px;
+        border-radius: 16px;
+        color: #ddd;
+        font-size: small;
+        padding: 5 10 5 10px;
+    }
+   .content {
+        display: flex;
+        gap: 10px;
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    body {
+        width: 90%;
+    }
+    #news-container {
+        display: grid;
+        grid-template-columns: 50%; 
+        gap: 10px;
+        justify-content: center; 
+    }
+   
+}
+
