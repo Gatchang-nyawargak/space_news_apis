@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
     <div id="app">
         <h1>Latest Space News</h1>
         <div class="content">
-            <input type="text" id="search" placeholder="Filter by topic ">
+            <input type="text" id="search" placeholder="Search by topic">
            <button onclick="fetchNews()" id="btn">Search</button>
         </div>
         <div id="news-container"></div>
