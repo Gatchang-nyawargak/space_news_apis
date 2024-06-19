@@ -13,11 +13,11 @@ async function fetchNews() {
     const filteredArticles = articles.filter(article =>
         article.title.toLowerCase().includes('space') || article.summary.toLowerCase().includes('space') ||
         article.title.toLowerCase().includes('nasa') || article.summary.toLowerCase().includes('nasa') ||
-        article.title.toLowerCase().includes('blue origin') || article.summary.toLowerCase() .includes('blue origin')
+        article.title.toLowerCase().includes('blue origin') || article.summary.toLowerCase().includes('blue origin')
     );
-    const articlesshow=searchQuery? articles:articles.slice(1);
+    const articlesToShow = searchQuery? articles : filteredArticles.slice(1);
     
-    displayNews(articlesshow);
+    displayNews(articlesToShow);
 }
 
 function displayNews(articles) {
@@ -38,7 +38,7 @@ function displayNews(articles) {
             newsItem.appendChild(image);
         }
         const summary = document.createElement('p');
-        summary.textContent = article.summary;
+        summary.textContent = _.truncate(article.summary, { length: 100, omission: '...' });
         
         const link = document.createElement('a');
         link.href = article.url;
@@ -50,8 +50,7 @@ function displayNews(articles) {
         newsItem.appendChild(link);
         
         newsContainer.appendChild(newsItem);
-        
     });
 }
-fetchNews();
 
+fetchNews();
